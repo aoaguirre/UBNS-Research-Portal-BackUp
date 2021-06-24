@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		427EC496065A5E65A2512E91 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF64129D4F9AB3C7CF03863 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework */; };
+		7EBC7CB089BDB789141A5890 /* Pods_University_at_Buffalo_Research_PortalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE67A0862078CB772CB93752 /* Pods_University_at_Buffalo_Research_PortalTests.framework */; };
+		869C0A66B53B4757279ED5C8 /* Pods_University_at_Buffalo_Research_Portal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BCDADF132D26303DA71F10 /* Pods_University_at_Buffalo_Research_Portal.framework */; };
+		90147F00263252FC008AEDF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90147EFF263252FC008AEDF4 /* GoogleService-Info.plist */; };
+		90147F01263252FC008AEDF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90147EFF263252FC008AEDF4 /* GoogleService-Info.plist */; };
+		90147F02263252FC008AEDF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90147EFF263252FC008AEDF4 /* GoogleService-Info.plist */; };
+		902BE739267D0CD200168AAA /* ScenceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BE738267D0CD200168AAA /* ScenceDelegate.swift */; };
+		902BE73E267D0E4000168AAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BE73D267D0E4000168AAA /* Extensions.swift */; };
+		902BE749267D632800168AAA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BE748267D632700168AAA /* DatabaseManager.swift */; };
+		902BE759267D6B5000168AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 902BE758267D6B5000168AAA /* Main.storyboard */; };
+		902BE761267D6EA500168AAA /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BE760267D6EA500168AAA /* ProfileTableViewCell.swift */; };
+		902F024B2683DD19005CD7FB /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F024A2683DD19005CD7FB /* ConversationTableViewCell.swift */; };
+		904340D02672A197006460C7 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904340CF2672A197006460C7 /* ConversationsViewController.swift */; };
+		904340DA2672A226006460C7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904340D92672A226006460C7 /* PhotoViewController.swift */; };
+		904340E72672A26F006460C7 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904340E62672A26F006460C7 /* NewConversationViewController.swift */; };
+		904340EC2672A288006460C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904340EB2672A288006460C7 /* ProfileViewController.swift */; };
+		90457B4326322B3A008F36B2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90457B4226322B3A008F36B2 /* RegisterViewController.swift */; };
+		90457B4826322B9D008F36B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90457B4726322B9D008F36B2 /* LoginViewController.swift */; };
+		905437FC2630EC90009A2AB3 /* ResidentLecture.png in Resources */ = {isa = PBXBuildFile; fileRef = 905437FB2630EC90009A2AB3 /* ResidentLecture.png */; };
+		905438012630F2BB009A2AB3 /* Khan Academy.png in Resources */ = {isa = PBXBuildFile; fileRef = 905438002630F2BB009A2AB3 /* Khan Academy.png */; };
+		905438062630F563009A2AB3 /* ExcelPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 905438052630F563009A2AB3 /* ExcelPhoto.png */; };
+		9060237C2684C80100EA5D1E /* NewConversationCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060237B2684C80100EA5D1E /* NewConversationCellTableViewCell.swift */; };
+		907D75CE262FBDAB007CECB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D75CD262FBDAB007CECB8 /* AppDelegate.swift */; };
+		907D75D7262FBDAD007CECB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907D75D6262FBDAD007CECB8 /* Assets.xcassets */; };
+		907D75E5262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D75E4262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalTests.swift */; };
+		907D75F0262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D75EF262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalUITests.swift */; };
+		907D7611262FC42F007CECB8 /* Brain Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 907D7610262FC42F007CECB8 /* Brain Title.png */; };
+		907D761E262FC517007CECB8 /* UBNS_New-Logo_Wide.png in Resources */ = {isa = PBXBuildFile; fileRef = 907D761D262FC517007CECB8 /* UBNS_New-Logo_Wide.png */; };
+		907D7623262FCB6F007CECB8 /* MainOffice.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 907D7622262FCB6F007CECB8 /* MainOffice.jpeg */; };
+		90DD0C26267E3FC000309C75 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DD0C25267E3FC000309C75 /* StorageManager.swift */; };
+		90E42465267BB23D00B1621F /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E42464267BB23D00B1621F /* ChatModels.swift */; };
+		90E4246D267BB26400B1621F /* ConversationsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E4246C267BB26400B1621F /* ConversationsModels.swift */; };
+		90E42472267BB27A00B1621F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E42471267BB27A00B1621F /* ProfileViewModel.swift */; };
+		90E42477267BB28800B1621F /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E42476267BB28800B1621F /* SearchResults.swift */; };
+		90EB1CC326756B5500D7B94C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB1CC226756B5500D7B94C /* ChatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		907D75E1262FBDAD007CECB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 907D75C2262FBDAB007CECB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 907D75C9262FBDAB007CECB8;
+			remoteInfo = "University at Buffalo Research Portal";
+		};
+		907D75EC262FBDAD007CECB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 907D75C2262FBDAB007CECB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 907D75C9262FBDAB007CECB8;
+			remoteInfo = "University at Buffalo Research Portal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C17C14A8435374607F45C1B /* Pods-University at Buffalo Research Portal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research Portal.release.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal.release.xcconfig"; sourceTree = "<group>"; };
+		3F5AA57D69B775A3BEEE47EF /* Pods-University at Buffalo Research PortalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research PortalTests.release.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research PortalTests/Pods-University at Buffalo Research PortalTests.release.xcconfig"; sourceTree = "<group>"; };
+		5624A1715E4C1B9810600E88 /* Pods-University at Buffalo Research Portal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research Portal.debug.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal.debug.xcconfig"; sourceTree = "<group>"; };
+		792532EBA8903B71D368B7D4 /* Pods-University at Buffalo Research PortalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research PortalTests.debug.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research PortalTests/Pods-University at Buffalo Research PortalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8343FE955ADAE4F4125FD8CA /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90147EFF263252FC008AEDF4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		902BE738267D0CD200168AAA /* ScenceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenceDelegate.swift; sourceTree = "<group>"; };
+		902BE73D267D0E4000168AAA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		902BE748267D632700168AAA /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		902BE758267D6B5000168AAA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		902BE760267D6EA500168AAA /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		902F024A2683DD19005CD7FB /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		904340CF2672A197006460C7 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		904340D92672A226006460C7 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		904340E62672A26F006460C7 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		904340EB2672A288006460C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		90457B4226322B3A008F36B2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		90457B4726322B9D008F36B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		905437FB2630EC90009A2AB3 /* ResidentLecture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResidentLecture.png; sourceTree = "<group>"; };
+		905438002630F2BB009A2AB3 /* Khan Academy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Khan Academy.png"; sourceTree = "<group>"; };
+		905438052630F563009A2AB3 /* ExcelPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExcelPhoto.png; sourceTree = "<group>"; };
+		9060237B2684C80100EA5D1E /* NewConversationCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationCellTableViewCell.swift; sourceTree = "<group>"; };
+		907D75CA262FBDAB007CECB8 /* UBNS Research Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UBNS Research Portal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907D75CD262FBDAB007CECB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		907D75D6262FBDAD007CECB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		907D75DB262FBDAD007CECB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907D75E0262FBDAD007CECB8 /* UBNS Research PortalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UBNS Research PortalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907D75E4262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University_at_Buffalo_Research_PortalTests.swift; sourceTree = "<group>"; };
+		907D75E6262FBDAD007CECB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907D75EB262FBDAD007CECB8 /* UBNS Research PortalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UBNS Research PortalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907D75EF262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University_at_Buffalo_Research_PortalUITests.swift; sourceTree = "<group>"; };
+		907D75F1262FBDAD007CECB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907D7610262FC42F007CECB8 /* Brain Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brain Title.png"; sourceTree = "<group>"; };
+		907D761D262FC517007CECB8 /* UBNS_New-Logo_Wide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UBNS_New-Logo_Wide.png"; sourceTree = "<group>"; };
+		907D7622262FCB6F007CECB8 /* MainOffice.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MainOffice.jpeg; sourceTree = "<group>"; };
+		90DD0C25267E3FC000309C75 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		90E42464267BB23D00B1621F /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		90E4246C267BB26400B1621F /* ConversationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsModels.swift; sourceTree = "<group>"; };
+		90E42471267BB27A00B1621F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		90E42476267BB28800B1621F /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		90EB1CC226756B5500D7B94C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		98BCDADF132D26303DA71F10 /* Pods_University_at_Buffalo_Research_Portal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_at_Buffalo_Research_Portal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF64129D4F9AB3C7CF03863 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC64A3136A68A808C40E0180 /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE67A0862078CB772CB93752 /* Pods_University_at_Buffalo_Research_PortalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_at_Buffalo_Research_PortalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		907D75C7262FBDAB007CECB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				869C0A66B53B4757279ED5C8 /* Pods_University_at_Buffalo_Research_Portal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D75DD262FBDAD007CECB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBC7CB089BDB789141A5890 /* Pods_University_at_Buffalo_Research_PortalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D75E8262FBDAD007CECB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427EC496065A5E65A2512E91 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49ECB2EA9A83C67A411086A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5624A1715E4C1B9810600E88 /* Pods-University at Buffalo Research Portal.debug.xcconfig */,
+				2C17C14A8435374607F45C1B /* Pods-University at Buffalo Research Portal.release.xcconfig */,
+				8343FE955ADAE4F4125FD8CA /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig */,
+				EC64A3136A68A808C40E0180 /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig */,
+				792532EBA8903B71D368B7D4 /* Pods-University at Buffalo Research PortalTests.debug.xcconfig */,
+				3F5AA57D69B775A3BEEE47EF /* Pods-University at Buffalo Research PortalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		905437E22630E37B009A2AB3 /* App Images */ = {
+			isa = PBXGroup;
+			children = (
+				905438052630F563009A2AB3 /* ExcelPhoto.png */,
+				905438002630F2BB009A2AB3 /* Khan Academy.png */,
+				905437FB2630EC90009A2AB3 /* ResidentLecture.png */,
+				907D7610262FC42F007CECB8 /* Brain Title.png */,
+				907D761D262FC517007CECB8 /* UBNS_New-Logo_Wide.png */,
+				907D7622262FCB6F007CECB8 /* MainOffice.jpeg */,
+			);
+			path = "App Images";
+			sourceTree = "<group>";
+		};
+		905437EC2630E3D2009A2AB3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90E42483267BB2F800B1621F /* Login */,
+				90EB1CC226756B5500D7B94C /* ChatViewController.swift */,
+				904340CF2672A197006460C7 /* ConversationsViewController.swift */,
+				90E42464267BB23D00B1621F /* ChatModels.swift */,
+				902F024A2683DD19005CD7FB /* ConversationTableViewCell.swift */,
+				9060237B2684C80100EA5D1E /* NewConversationCellTableViewCell.swift */,
+				90E4246C267BB26400B1621F /* ConversationsModels.swift */,
+				904340E62672A26F006460C7 /* NewConversationViewController.swift */,
+				904340D92672A226006460C7 /* PhotoViewController.swift */,
+				904340EB2672A288006460C7 /* ProfileViewController.swift */,
+				90E42463267BB22600B1621F /* Models */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		906023802684D0C400EA5D1E /* Project Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Project Files";
+			sourceTree = "<group>";
+		};
+		907D75C1262FBDAB007CECB8 = {
+			isa = PBXGroup;
+			children = (
+				907D75CC262FBDAB007CECB8 /* University at Buffalo Research Portal */,
+				907D75E3262FBDAD007CECB8 /* University at Buffalo Research PortalTests */,
+				907D75EE262FBDAD007CECB8 /* University at Buffalo Research PortalUITests */,
+				907D75CB262FBDAB007CECB8 /* Products */,
+				49ECB2EA9A83C67A411086A9 /* Pods */,
+				EDE52789F0F7DC8676903C3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		907D75CB262FBDAB007CECB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				907D75CA262FBDAB007CECB8 /* UBNS Research Portal.app */,
+				907D75E0262FBDAD007CECB8 /* UBNS Research PortalTests.xctest */,
+				907D75EB262FBDAD007CECB8 /* UBNS Research PortalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		907D75CC262FBDAB007CECB8 /* University at Buffalo Research Portal */ = {
+			isa = PBXGroup;
+			children = (
+				906023802684D0C400EA5D1E /* Project Files */,
+				90E4247C267BB2A400B1621F /* Resources */,
+				90E4249D267BB6BE00B1621F /* Views */,
+				905437EC2630E3D2009A2AB3 /* Controllers */,
+				905437E22630E37B009A2AB3 /* App Images */,
+				90147EFF263252FC008AEDF4 /* GoogleService-Info.plist */,
+				907D75D6262FBDAD007CECB8 /* Assets.xcassets */,
+				907D75DB262FBDAD007CECB8 /* Info.plist */,
+			);
+			path = "University at Buffalo Research Portal";
+			sourceTree = "<group>";
+		};
+		907D75E3262FBDAD007CECB8 /* University at Buffalo Research PortalTests */ = {
+			isa = PBXGroup;
+			children = (
+				907D75E4262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalTests.swift */,
+				907D75E6262FBDAD007CECB8 /* Info.plist */,
+			);
+			path = "University at Buffalo Research PortalTests";
+			sourceTree = "<group>";
+		};
+		907D75EE262FBDAD007CECB8 /* University at Buffalo Research PortalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				907D75EF262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalUITests.swift */,
+				907D75F1262FBDAD007CECB8 /* Info.plist */,
+			);
+			path = "University at Buffalo Research PortalUITests";
+			sourceTree = "<group>";
+		};
+		90E42463267BB22600B1621F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90E42471267BB27A00B1621F /* ProfileViewModel.swift */,
+				90E42476267BB28800B1621F /* SearchResults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		90E4247C267BB2A400B1621F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				907D75CD262FBDAB007CECB8 /* AppDelegate.swift */,
+				902BE738267D0CD200168AAA /* ScenceDelegate.swift */,
+				902BE73D267D0E4000168AAA /* Extensions.swift */,
+				902BE748267D632700168AAA /* DatabaseManager.swift */,
+				90DD0C25267E3FC000309C75 /* StorageManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90E42483267BB2F800B1621F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				90457B4726322B9D008F36B2 /* LoginViewController.swift */,
+				90457B4226322B3A008F36B2 /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		90E4249D267BB6BE00B1621F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				902BE758267D6B5000168AAA /* Main.storyboard */,
+				902BE760267D6EA500168AAA /* ProfileTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDE52789F0F7DC8676903C3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98BCDADF132D26303DA71F10 /* Pods_University_at_Buffalo_Research_Portal.framework */,
+				AAF64129D4F9AB3C7CF03863 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework */,
+				FE67A0862078CB772CB93752 /* Pods_University_at_Buffalo_Research_PortalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		907D75C9262FBDAB007CECB8 /* UBNS Research Portal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907D75F4262FBDAD007CECB8 /* Build configuration list for PBXNativeTarget "UBNS Research Portal" */;
+			buildPhases = (
+				B207B73957329A635D865C4F /* [CP] Check Pods Manifest.lock */,
+				907D75C6262FBDAB007CECB8 /* Sources */,
+				907D75C7262FBDAB007CECB8 /* Frameworks */,
+				907D75C8262FBDAB007CECB8 /* Resources */,
+				BC40105726A6A7DC0DE0C6AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UBNS Research Portal";
+			productName = "University at Buffalo Research Portal";
+			productReference = 907D75CA262FBDAB007CECB8 /* UBNS Research Portal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		907D75DF262FBDAD007CECB8 /* UBNS Research PortalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907D75F7262FBDAD007CECB8 /* Build configuration list for PBXNativeTarget "UBNS Research PortalTests" */;
+			buildPhases = (
+				FCA60C7AF63355EA01AFBB2D /* [CP] Check Pods Manifest.lock */,
+				907D75DC262FBDAD007CECB8 /* Sources */,
+				907D75DD262FBDAD007CECB8 /* Frameworks */,
+				907D75DE262FBDAD007CECB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				907D75E2262FBDAD007CECB8 /* PBXTargetDependency */,
+			);
+			name = "UBNS Research PortalTests";
+			productName = "University at Buffalo Research PortalTests";
+			productReference = 907D75E0262FBDAD007CECB8 /* UBNS Research PortalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		907D75EA262FBDAD007CECB8 /* UBNS Research PortalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907D75FA262FBDAD007CECB8 /* Build configuration list for PBXNativeTarget "UBNS Research PortalUITests" */;
+			buildPhases = (
+				54B86E4C3A605DD6E0F5A11B /* [CP] Check Pods Manifest.lock */,
+				907D75E7262FBDAD007CECB8 /* Sources */,
+				907D75E8262FBDAD007CECB8 /* Frameworks */,
+				907D75E9262FBDAD007CECB8 /* Resources */,
+				8461BF618132EF6655BC6B2D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				907D75ED262FBDAD007CECB8 /* PBXTargetDependency */,
+			);
+			name = "UBNS Research PortalUITests";
+			productName = "University at Buffalo Research PortalUITests";
+			productReference = 907D75EB262FBDAD007CECB8 /* UBNS Research PortalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		907D75C2262FBDAB007CECB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					907D75C9262FBDAB007CECB8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					907D75DF262FBDAD007CECB8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 907D75C9262FBDAB007CECB8;
+					};
+					907D75EA262FBDAD007CECB8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 907D75C9262FBDAB007CECB8;
+					};
+				};
+			};
+			buildConfigurationList = 907D75C5262FBDAB007CECB8 /* Build configuration list for PBXProject "UBNS Research Portal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 907D75C1262FBDAB007CECB8;
+			productRefGroup = 907D75CB262FBDAB007CECB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				907D75C9262FBDAB007CECB8 /* UBNS Research Portal */,
+				907D75DF262FBDAD007CECB8 /* UBNS Research PortalTests */,
+				907D75EA262FBDAD007CECB8 /* UBNS Research PortalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		907D75C8262FBDAB007CECB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907D7623262FCB6F007CECB8 /* MainOffice.jpeg in Resources */,
+				902BE759267D6B5000168AAA /* Main.storyboard in Resources */,
+				907D7611262FC42F007CECB8 /* Brain Title.png in Resources */,
+				905437FC2630EC90009A2AB3 /* ResidentLecture.png in Resources */,
+				907D75D7262FBDAD007CECB8 /* Assets.xcassets in Resources */,
+				905438062630F563009A2AB3 /* ExcelPhoto.png in Resources */,
+				907D761E262FC517007CECB8 /* UBNS_New-Logo_Wide.png in Resources */,
+				90147F00263252FC008AEDF4 /* GoogleService-Info.plist in Resources */,
+				905438012630F2BB009A2AB3 /* Khan Academy.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D75DE262FBDAD007CECB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90147F01263252FC008AEDF4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D75E9262FBDAD007CECB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90147F02263252FC008AEDF4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54B86E4C3A605DD6E0F5A11B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8461BF618132EF6655BC6B2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B207B73957329A635D865C4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-University at Buffalo Research Portal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC40105726A6A7DC0DE0C6AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCA60C7AF63355EA01AFBB2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-University at Buffalo Research PortalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		907D75C6262FBDAB007CECB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DD0C26267E3FC000309C75 /* StorageManager.swift in Sources */,
+				90457B4826322B9D008F36B2 /* LoginViewController.swift in Sources */,
+				90E42472267BB27A00B1621F /* ProfileViewModel.swift in Sources */,
+				902BE749267D632800168AAA /* DatabaseManager.swift in Sources */,
+				9060237C2684C80100EA5D1E /* NewConversationCellTableViewCell.swift in Sources */,
+				90E42477267BB28800B1621F /* SearchResults.swift in Sources */,
+				90EB1CC326756B5500D7B94C /* ChatViewController.swift in Sources */,
+				90E4246D267BB26400B1621F /* ConversationsModels.swift in Sources */,
+				904340DA2672A226006460C7 /* PhotoViewController.swift in Sources */,
+				902F024B2683DD19005CD7FB /* ConversationTableViewCell.swift in Sources */,
+				904340D02672A197006460C7 /* ConversationsViewController.swift in Sources */,
+				90457B4326322B3A008F36B2 /* RegisterViewController.swift in Sources */,
+				902BE761267D6EA500168AAA /* ProfileTableViewCell.swift in Sources */,
+				907D75CE262FBDAB007CECB8 /* AppDelegate.swift in Sources */,
+				90E42465267BB23D00B1621F /* ChatModels.swift in Sources */,
+				902BE739267D0CD200168AAA /* ScenceDelegate.swift in Sources */,
+				904340EC2672A288006460C7 /* ProfileViewController.swift in Sources */,
+				904340E72672A26F006460C7 /* NewConversationViewController.swift in Sources */,
+				902BE73E267D0E4000168AAA /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D75DC262FBDAD007CECB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907D75E5262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D75E7262FBDAD007CECB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907D75F0262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		907D75E2262FBDAD007CECB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 907D75C9262FBDAB007CECB8 /* UBNS Research Portal */;
+			targetProxy = 907D75E1262FBDAD007CECB8 /* PBXContainerItemProxy */;
+		};
+		907D75ED262FBDAD007CECB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 907D75C9262FBDAB007CECB8 /* UBNS Research Portal */;
+			targetProxy = 907D75EC262FBDAD007CECB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		907D75F2262FBDAD007CECB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		907D75F3262FBDAD007CECB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		907D75F5262FBDAD007CECB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5624A1715E4C1B9810600E88 /* Pods-University at Buffalo Research Portal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "University at Buffalo Research Portal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AA.University-at-Buffalo-Research-Portal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		907D75F6262FBDAD007CECB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C17C14A8435374607F45C1B /* Pods-University at Buffalo Research Portal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "University at Buffalo Research Portal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AA.University-at-Buffalo-Research-Portal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		907D75F8262FBDAD007CECB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792532EBA8903B71D368B7D4 /* Pods-University at Buffalo Research PortalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "University at Buffalo Research PortalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AA.University-at-Buffalo-Research-PortalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBNS Research Portal.app/UBNS Research Portal";
+			};
+			name = Debug;
+		};
+		907D75F9262FBDAD007CECB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F5AA57D69B775A3BEEE47EF /* Pods-University at Buffalo Research PortalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "University at Buffalo Research PortalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AA.University-at-Buffalo-Research-PortalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBNS Research Portal.app/UBNS Research Portal";
+			};
+			name = Release;
+		};
+		907D75FB262FBDAD007CECB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8343FE955ADAE4F4125FD8CA /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "University at Buffalo Research PortalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AA.University-at-Buffalo-Research-PortalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "University at Buffalo Research Portal";
+			};
+			name = Debug;
+		};
+		907D75FC262FBDAD007CECB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC64A3136A68A808C40E0180 /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "University at Buffalo Research PortalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AA.University-at-Buffalo-Research-PortalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "University at Buffalo Research Portal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		907D75C5262FBDAB007CECB8 /* Build configuration list for PBXProject "UBNS Research Portal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907D75F2262FBDAD007CECB8 /* Debug */,
+				907D75F3262FBDAD007CECB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907D75F4262FBDAD007CECB8 /* Build configuration list for PBXNativeTarget "UBNS Research Portal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907D75F5262FBDAD007CECB8 /* Debug */,
+				907D75F6262FBDAD007CECB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907D75F7262FBDAD007CECB8 /* Build configuration list for PBXNativeTarget "UBNS Research PortalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907D75F8262FBDAD007CECB8 /* Debug */,
+				907D75F9262FBDAD007CECB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907D75FA262FBDAD007CECB8 /* Build configuration list for PBXNativeTarget "UBNS Research PortalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907D75FB262FBDAD007CECB8 /* Debug */,
+				907D75FC262FBDAD007CECB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 907D75C2262FBDAB007CECB8 /* Project object */;
+}
