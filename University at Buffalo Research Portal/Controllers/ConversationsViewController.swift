@@ -162,7 +162,7 @@ final class ConversationsViewController: UIViewController {
         super.viewDidAppear(animated)
         validateAuth()
     }
-
+    
     private func validateAuth() {
         if FirebaseAuth.Auth.auth().currentUser == nil {
             let vc = LoginViewController()
@@ -171,6 +171,8 @@ final class ConversationsViewController: UIViewController {
             present(nav, animated: false)
         }
     }
+
+
 
     private func setupTableView() {
         tableView.delegate = self

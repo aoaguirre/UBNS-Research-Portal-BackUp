@@ -23,12 +23,16 @@
 		904340DA2672A226006460C7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904340D92672A226006460C7 /* PhotoViewController.swift */; };
 		904340E72672A26F006460C7 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904340E62672A26F006460C7 /* NewConversationViewController.swift */; };
 		904340EC2672A288006460C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904340EB2672A288006460C7 /* ProfileViewController.swift */; };
+		904571E9268B9C6500FE010E /* EndoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904571E8268B9C6500FE010E /* EndoTableViewController.swift */; };
+		904571EE268B9F9300FE010E /* NewEndoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904571ED268B9F9200FE010E /* NewEndoViewController.swift */; };
+		904571FB268BD1EF00FE010E /* NewSpineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904571FA268BD1EE00FE010E /* NewSpineViewController.swift */; };
 		90457B4326322B3A008F36B2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90457B4226322B3A008F36B2 /* RegisterViewController.swift */; };
 		90457B4826322B9D008F36B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90457B4726322B9D008F36B2 /* LoginViewController.swift */; };
 		905437FC2630EC90009A2AB3 /* ResidentLecture.png in Resources */ = {isa = PBXBuildFile; fileRef = 905437FB2630EC90009A2AB3 /* ResidentLecture.png */; };
 		905438012630F2BB009A2AB3 /* Khan Academy.png in Resources */ = {isa = PBXBuildFile; fileRef = 905438002630F2BB009A2AB3 /* Khan Academy.png */; };
 		905438062630F563009A2AB3 /* ExcelPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 905438052630F563009A2AB3 /* ExcelPhoto.png */; };
 		9060237C2684C80100EA5D1E /* NewConversationCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060237B2684C80100EA5D1E /* NewConversationCellTableViewCell.swift */; };
+		906023912684DF8600EA5D1E /* PositionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906023902684DF8600EA5D1E /* PositionSelectionViewController.swift */; };
 		907D75CE262FBDAB007CECB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D75CD262FBDAB007CECB8 /* AppDelegate.swift */; };
 		907D75D7262FBDAD007CECB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907D75D6262FBDAD007CECB8 /* Assets.xcassets */; };
 		907D75E5262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D75E4262FBDAD007CECB8 /* University_at_Buffalo_Research_PortalTests.swift */; };
@@ -78,12 +82,16 @@
 		904340D92672A226006460C7 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		904340E62672A26F006460C7 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		904340EB2672A288006460C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		904571E8268B9C6500FE010E /* EndoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndoTableViewController.swift; sourceTree = "<group>"; };
+		904571ED268B9F9200FE010E /* NewEndoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEndoViewController.swift; sourceTree = "<group>"; };
+		904571FA268BD1EE00FE010E /* NewSpineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpineViewController.swift; sourceTree = "<group>"; };
 		90457B4226322B3A008F36B2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		90457B4726322B9D008F36B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		905437FB2630EC90009A2AB3 /* ResidentLecture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResidentLecture.png; sourceTree = "<group>"; };
 		905438002630F2BB009A2AB3 /* Khan Academy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Khan Academy.png"; sourceTree = "<group>"; };
 		905438052630F563009A2AB3 /* ExcelPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExcelPhoto.png; sourceTree = "<group>"; };
 		9060237B2684C80100EA5D1E /* NewConversationCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationCellTableViewCell.swift; sourceTree = "<group>"; };
+		906023902684DF8600EA5D1E /* PositionSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PositionSelectionViewController.swift; path = "University at Buffalo Research Portal/Views/PositionSelectionViewController.swift"; sourceTree = SOURCE_ROOT; };
 		907D75CA262FBDAB007CECB8 /* UBNS Research Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UBNS Research Portal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		907D75CD262FBDAB007CECB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		907D75D6262FBDAD007CECB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +192,10 @@
 		906023802684D0C400EA5D1E /* Project Files */ = {
 			isa = PBXGroup;
 			children = (
+				906023902684DF8600EA5D1E /* PositionSelectionViewController.swift */,
+				904571E8268B9C6500FE010E /* EndoTableViewController.swift */,
+				904571ED268B9F9200FE010E /* NewEndoViewController.swift */,
+				904571FA268BD1EE00FE010E /* NewSpineViewController.swift */,
 			);
 			path = "Project Files";
 			sourceTree = "<group>";
@@ -541,11 +553,13 @@
 				90DD0C26267E3FC000309C75 /* StorageManager.swift in Sources */,
 				90457B4826322B9D008F36B2 /* LoginViewController.swift in Sources */,
 				90E42472267BB27A00B1621F /* ProfileViewModel.swift in Sources */,
+				904571E9268B9C6500FE010E /* EndoTableViewController.swift in Sources */,
 				902BE749267D632800168AAA /* DatabaseManager.swift in Sources */,
 				9060237C2684C80100EA5D1E /* NewConversationCellTableViewCell.swift in Sources */,
 				90E42477267BB28800B1621F /* SearchResults.swift in Sources */,
 				90EB1CC326756B5500D7B94C /* ChatViewController.swift in Sources */,
 				90E4246D267BB26400B1621F /* ConversationsModels.swift in Sources */,
+				904571EE268B9F9300FE010E /* NewEndoViewController.swift in Sources */,
 				904340DA2672A226006460C7 /* PhotoViewController.swift in Sources */,
 				902F024B2683DD19005CD7FB /* ConversationTableViewCell.swift in Sources */,
 				904340D02672A197006460C7 /* ConversationsViewController.swift in Sources */,
@@ -556,6 +570,8 @@
 				902BE739267D0CD200168AAA /* ScenceDelegate.swift in Sources */,
 				904340EC2672A288006460C7 /* ProfileViewController.swift in Sources */,
 				904340E72672A26F006460C7 /* NewConversationViewController.swift in Sources */,
+				904571FB268BD1EF00FE010E /* NewSpineViewController.swift in Sources */,
+				906023912684DF8600EA5D1E /* PositionSelectionViewController.swift in Sources */,
 				902BE73E267D0E4000168AAA /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
