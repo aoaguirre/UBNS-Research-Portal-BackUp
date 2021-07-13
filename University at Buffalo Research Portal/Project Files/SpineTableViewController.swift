@@ -1,28 +1,33 @@
 //
-//  EndoTableViewController.swift
+//  SpineTableViewController.swift
 //  UBNS Research Portal
 //
 //  Created by Alex Aguirre on 6/29/21.
 //
-import Foundation
+
 import UIKit
 import Firebase
 
-class EndoTableViewController: UITableViewController {
-        
-    var endoprojects = [EndoProject]()
+
+
+class SpineTableViewController: UITableViewController {
+
+    var spineprojects = [SpineProject]()
     
-    @IBOutlet weak var projectnameLabel: UILabel!
-    @IBOutlet weak var residentnameLabel: UILabel!
- 
+    @IBOutlet weak var projectname: UILabel!
+    
+    @IBOutlet weak var residentname: UILabel!
+    
+    @IBOutlet weak var numberofstudents: UILabel!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
 
         let db = Firestore.firestore()
-        db.collection("endoprojects").getDocuments{ (snapshot, error) in
+        db.collection("spineprojects").getDocuments{ (snapshot, error) in
             if let error = error {
                 debugPrint("Error fetching documents: \(error)")
             }
@@ -48,10 +53,12 @@ class EndoTableViewController: UITableViewController {
                     let MS3Email = data["MS3Email"] as? String ?? ""
                     let MS4Name = data["MS4Name"] as? String ?? ""
                     let MS4Email = data["MS4Email"] as? String ?? ""
-                
-                
-                    let newElement = EndoProject(documentID: documentID, projectname: projectname, residentname: residentname, numberofstudents: numberofstudents, IRBhelp: IRBhelp, LitReview: LitReview, Stats: Stats, DCUBNS: DCUBNS, DCK: DCK, Manuscript: Manuscript, MS1Name: MS1Name, MS1Email: MS1Email, MS2Name: MS2Name, MS2Email: MS2Email, MS3Name: MS3Name, MS3Email: MS3Email, MS4Name: MS4Name, MS4Email: MS4Email)
-                    self.endoprojects.append(newElement)
+                    
+                    
+                    
+                    
+                    let newElement = SpineProject(documentID: documentID, projectname: projectname, residentname: residentname, numberofstudents: numberofstudents, IRBhelp: IRBhelp, LitReview: LitReview, Stats: Stats, DCUBNS: DCUBNS, DCK: DCK, Manuscript: Manuscript, MS1Name: MS1Name, MS1Email: MS1Email, MS2Name: MS2Name, MS2Email: MS2Email, MS3Name: MS3Name, MS3Email: MS3Email, MS4Name: MS4Name, MS4Email: MS4Email)
+                    self.spineprojects.append(newElement)
                 }
                 self.tableView.reloadData()
             }
@@ -60,14 +67,15 @@ class EndoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return endoprojects.count
+        return spineprojects.count
     }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "EndoCell", for: indexPath) as? EndoTableViewCell{
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "SpineCell", for: indexPath) as? SpineTableViewCell{
             
-            cell.configureCell(endoproject: endoprojects[indexPath.row])
+            cell.configureCell(spineproject: spineprojects[indexPath.row])
             
             cell.displayValueMS0()
             cell.displayValueMS1()
@@ -75,12 +83,16 @@ class EndoTableViewController: UITableViewController {
             cell.displayValueMS3()
             cell.displayValueMS4()
             
+            
+            
             return cell
         }else{
             return UITableViewCell()
         }
     }
-
+    
+  
     
 }
+
 

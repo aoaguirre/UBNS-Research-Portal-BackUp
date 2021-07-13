@@ -17,7 +17,6 @@ class NewSpineViewController: UIViewController {
     
     @IBOutlet weak var sliderLabel: UILabel!
     @IBOutlet weak var numberofstudents: UISlider!
-    
     @IBOutlet weak var submitproject: UIButton!
     
     
@@ -117,6 +116,7 @@ class NewSpineViewController: UIViewController {
     
     
     @IBAction func submitButtonTapped(_ sender: Any) {
+        
         let projectname = projectnameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let residentname = residentnameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let lengthofproject = lengthofprojectTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -127,12 +127,23 @@ class NewSpineViewController: UIViewController {
         let DCUBNS = DCUBNSL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let DCK = DCKL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let manuscript = ManuscriptL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let MS1Name = ""
+        let MS1Email = ""
+        let MS2Name = ""
+        let MS2Email = ""
+        let MS3Name = ""
+        let MS3Email = ""
+        let MS4Name = ""
+        let MS4Email = ""
 
 
 
         let db = Firestore.firestore()
-        db.collection("spineprojects").document().setData(["projectname": projectname, "residentname": residentname, "lengthofproject": lengthofproject, "numberofstudents": numberofstudents,"irbhelp": irbhelp,"litreview": litreview,"statistics": statistics, "DCUBNS": DCUBNS, "DCK": DCK, "manuscript": manuscript]) { (error) in
+        let newDocument = db.collection("spineprojects").document()
+            newDocument.setData(["projectname": projectname, "residentname": residentname, "lengthofproject": lengthofproject, "numberofstudents": numberofstudents,"irbhelp": irbhelp,"litreview": litreview,"statistics": statistics, "DCUBNS": DCUBNS, "DCK": DCK, "manuscript": manuscript,"MS1Name":MS1Name, "MS1Email": MS1Email, "MS2Name": MS2Name, "MS2Email": MS2Email, "MS3Name": MS3Name,"MS3Email": MS3Email, "MS4Name": MS4Name, "MS4Email": MS4Email, "id": newDocument.documentID]) { (error) in
             
+                
+                
             self.transitionToHome()
             
             if error != nil {
