@@ -16,9 +16,12 @@ final class NewLoginViewController: UIViewController {
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
             scrollView.clipsToBounds = true
+        scrollView.backgroundColor = .systemBackground
         return scrollView
         
     }()
+    
+    @IBOutlet weak var imageView: UIImageView!
     
     private let emailField: UITextField = {
     let field = UITextField()
@@ -31,7 +34,7 @@ final class NewLoginViewController: UIViewController {
         field.placeholder = "Email Address"
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .white
+        field.backgroundColor = .secondarySystemBackground
         return field
     }()
     
@@ -46,7 +49,7 @@ final class NewLoginViewController: UIViewController {
         field.placeholder = "Password..."
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .white
+        field.backgroundColor = .secondarySystemBackground
         field.isSecureTextEntry = true
         return field
     }()
@@ -86,6 +89,7 @@ final class NewLoginViewController: UIViewController {
         
         
         view.addSubview(scrollView)
+        scrollView.addSubview(imageView)
         scrollView.addSubview(emailField)
         scrollView.addSubview(passwordField)
         scrollView.addSubview(LogInButton)
@@ -95,6 +99,10 @@ final class NewLoginViewController: UIViewController {
         super.viewDidLayoutSubviews()
         scrollView.frame = view.bounds
         
+        imageView.frame = CGRect(x: 30,
+                                 y: 200,
+                                 width: scrollView.width-60,
+                                 height: 52)
         
         emailField.frame = CGRect(x: 30,
                                   y: 300,

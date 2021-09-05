@@ -1,20 +1,28 @@
 //
-//  SpineTableViewCell.swift
+//  NeuroOncTableViewCell.swift
 //  UBNS Research Portal
 //
-//  Created by Alex Aguirre on 6/29/21.
+//  Created by Alex Aguirre on 9/4/21.
 //
 
 import UIKit
 import Firebase
 
-class SpineTableViewCell: UITableViewCell {
+class NeuroOncTableViewCell: UITableViewCell {
 
     @IBOutlet weak var idLabel: UILabel!
     
     @IBOutlet weak var projectnameLabel: UILabel!
     @IBOutlet weak var residentnameLabel: UILabel!
     @IBOutlet weak var numberofStudents: UILabel!
+    
+    @IBOutlet weak var IRBhelpL: UILabel!
+    @IBOutlet weak var LitReviewL: UILabel!
+    @IBOutlet weak var StatsLabel: UILabel!
+    @IBOutlet weak var DCUBNSL: UILabel!
+    @IBOutlet weak var DCKL: UILabel!
+    @IBOutlet weak var ManuscriptL: UILabel!
+    
     
     @IBOutlet weak var MS1StudentLabel: UILabel!
     @IBOutlet weak var MS1StudentEmailLabel: UILabel!
@@ -25,12 +33,6 @@ class SpineTableViewCell: UITableViewCell {
     @IBOutlet weak var MS4StudentLabel: UILabel!
     @IBOutlet weak var MS4StudentEmailLabel: UILabel!
     
-    @IBOutlet weak var IRBhelpL: UILabel!
-    @IBOutlet weak var LitReviewL: UILabel!
-    @IBOutlet weak var DCUBNSL: UILabel!
-    @IBOutlet weak var DCKL: UILabel!
-    @IBOutlet weak var ManuscriptL: UILabel!
-    @IBOutlet weak var StatsLabel: UILabel!
     
     @IBOutlet weak var MS1Title: UILabel!
     @IBOutlet weak var MS1Name: UITextField!
@@ -48,51 +50,51 @@ class SpineTableViewCell: UITableViewCell {
     @IBOutlet weak var MS4Name: UITextField!
     @IBOutlet weak var MS4Email: UITextField!
     
-   
     @IBOutlet weak var submitButton: UIButton!
     
+
     override func awakeFromNib() {
         super.awakeFromNib()
-   
     }
 
-    func configureCell(spineproject: SpineProject) {
-        projectnameLabel.text = spineproject.projectname
-        residentnameLabel.text = spineproject.residentname
-        numberofStudents.text = spineproject.numberofstudents
-        IRBhelpL.text = spineproject.IRBhelp
-        LitReviewL.text = spineproject.LitReview
-        StatsLabel.text = spineproject.Stats
-        DCUBNSL.text = spineproject.DCUBNS
-        DCKL.text = spineproject.DCK
-        ManuscriptL.text = spineproject.Manuscript
-        idLabel.text = spineproject.documentID
+    func configureCell(neurooncproject: NeuroOncProject) {
+        projectnameLabel.text = neurooncproject.projectname
+        residentnameLabel.text = neurooncproject.residentname
+        numberofStudents.text = neurooncproject.numberofstudents
+        IRBhelpL.text = neurooncproject.IRBhelp
+        LitReviewL.text = neurooncproject.LitReview
+        StatsLabel.text = neurooncproject.Stats
+        DCUBNSL.text = neurooncproject.DCUBNS
+        DCKL.text = neurooncproject.DCK
+        ManuscriptL.text = neurooncproject.Manuscript
+        idLabel.text = neurooncproject.documentID
         
-        MS1Name.text = spineproject.MS1Name
-        MS1StudentLabel.text = spineproject.MS1Name
+        MS1Name.text = neurooncproject.MS1Name
+        MS1StudentLabel.text = neurooncproject.MS1Name
         
-        MS1Email.text = spineproject.MS1Email
-        MS1StudentEmailLabel.text = spineproject.MS1Email
+        MS1Email.text = neurooncproject.MS1Email
+        MS1StudentEmailLabel.text = neurooncproject.MS1Email
         
-        MS2Name.text = spineproject.MS2Name
-        MS2StudentLabel.text = spineproject.MS2Name
+        MS2Name.text = neurooncproject.MS2Name
+        MS2StudentLabel.text = neurooncproject.MS2Name
         
-        MS2Email.text = spineproject.MS2Email
-        MS2StudentEmailLabel.text = spineproject.MS2Email
+        MS2Email.text = neurooncproject.MS2Email
+        MS2StudentEmailLabel.text = neurooncproject.MS2Email
         
-        MS3Name.text = spineproject.MS3Name
-        MS3StudentLabel.text = spineproject.MS3Name
+        MS3Name.text = neurooncproject.MS3Name
+        MS3StudentLabel.text = neurooncproject.MS3Name
         
-        MS3Email.text = spineproject.MS3Email
-        MS3StudentEmailLabel.text = spineproject.MS3Email
+        MS3Email.text = neurooncproject.MS3Email
+        MS3StudentEmailLabel.text = neurooncproject.MS3Email
         
-        MS4Name.text = spineproject.MS4Name
-        MS4StudentLabel.text = spineproject.MS4Name
+        MS4Name.text = neurooncproject.MS4Name
+        MS4StudentLabel.text = neurooncproject.MS4Name
         
-        MS4Email.text = spineproject.MS4Email
-        MS4StudentEmailLabel.text = spineproject.MS4Email
+        MS4Email.text = neurooncproject.MS4Email
+        MS4StudentEmailLabel.text = neurooncproject.MS4Email
     
 }
+  
     
     func displayValueMS0() {
     
@@ -431,9 +433,8 @@ class SpineTableViewCell: UITableViewCell {
        }
     
     
-
-    @IBAction func submitButtonPushed(_ sender: Any) {
-        
+    
+    @IBAction func submitButtonPressed(_ sender: Any) {
         MSSpot1Submit()
         MSSpot2Submit()
         MSSpot3Submit()
@@ -445,12 +446,13 @@ class SpineTableViewCell: UITableViewCell {
         displayValueMS3()
         displayValueMS4()
     }
-
+    
+    
     func MSSpot1Submit() {
         let db = Firestore.firestore()
         let ms1name = MS1Name.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let ms1email = MS1Email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        db.collection("spineprojects").document("\(idLabel.text ?? "")")
+        db.collection("neurooncprojects").document("\(idLabel.text ?? "")")
             .setData(["MS1Name": ms1name, "MS1Email": ms1email], merge: true)
   
     }
@@ -459,7 +461,7 @@ class SpineTableViewCell: UITableViewCell {
         let db = Firestore.firestore()
         let ms2name = MS2Name.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let ms2email = MS2Email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        db.collection("spineprojects").document("\(idLabel.text ?? "")")
+        db.collection("neurooncprojects").document("\(idLabel.text ?? "")")
             .setData(["MS2Name": ms2name, "MS2Email": ms2email,], merge: true)
        
     }
@@ -468,7 +470,7 @@ class SpineTableViewCell: UITableViewCell {
         let db = Firestore.firestore()
         let ms3name = MS3Name.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let ms3email = MS3Email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        db.collection("spineprojects").document("\(idLabel.text ?? "")")
+        db.collection("neurooncprojects").document("\(idLabel.text ?? "")")
             .setData(["MS3Name": ms3name, "MS3Email": ms3email], merge: true)
     }
 
@@ -476,9 +478,10 @@ class SpineTableViewCell: UITableViewCell {
         let db = Firestore.firestore()
         let ms4name = MS4Name.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let ms4email = MS4Email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        db.collection("spineprojects").document("\(idLabel.text ?? "")")
+        db.collection("neurooncprojects").document("\(idLabel.text ?? "")")
             .setData(["MS4Name": ms4name, "MS4Email": ms4email], merge: true)
     
     }
+
 
 }

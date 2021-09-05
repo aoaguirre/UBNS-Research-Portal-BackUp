@@ -14,8 +14,6 @@ class EndoTableViewController: UITableViewController {
     
     @IBOutlet weak var projectnameLabel: UILabel!
     @IBOutlet weak var residentnameLabel: UILabel!
- 
-    
     
     
     override func viewDidLoad() {
@@ -39,7 +37,7 @@ class EndoTableViewController: UITableViewController {
                     let Stats = data["statistics"] as? String ?? ""
                     let DCUBNS = data["DCUBNS"] as? String ?? ""
                     let DCK = data["DCK"] as? String ?? ""
-                    let Manuscript = data["Manuscript"] as? String ?? ""
+                    let Manuscript = data["manuscript"] as? String ?? ""
                     let MS1Name = data["MS1Name"] as? String ?? ""
                     let MS1Email = data["MS1Email"] as? String ?? ""
                     let MS2Name = data["MS2Name"] as? String ?? ""

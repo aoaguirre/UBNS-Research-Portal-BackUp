@@ -15,7 +15,8 @@ class ShadowingViewController: UIViewController {
     @IBOutlet weak var ShadowingTimeTextField: UITextField!
     @IBOutlet weak var DoctorNameTextField: UITextField!
     
-    
+    @IBOutlet weak var numberofstudentL: UILabel!
+    @IBOutlet weak var numberofstudents: UISlider!
     @IBOutlet weak var submitShadowing: UIButton!
     
     @IBOutlet weak var EndoSwitch: UISwitch!
@@ -43,7 +44,14 @@ class ShadowingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func EndoSwitched(_ sender: Any) {
@@ -97,21 +105,40 @@ class ShadowingViewController: UIViewController {
     }
     
     
+    @IBAction func numberofstudentschanged(_ sender: UISlider) {
+        
+        let currentValue = Int(sender.value)
+        numberofstudentL.text = "\(currentValue)"
+    }
+    
+    
     @IBAction func shadowSubmit(_ sender: Any) {
         
         let shadowdate = ShadowingDateTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let shadowingtime = ShadowingTimeTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let doctortoshadow = DoctorNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let numberofstudents = numberofstudentL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let endo = EndoSwitchL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let spine = SpineSwitchL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let peds = PedsSwitchL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let funca = FuncSwitchL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let resident = ResidentSwitchL.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let MS1Name = ""
+        let MS1Email = ""
+        let MS2Name = ""
+        let MS2Email = ""
+        let MS3Name = ""
+        let MS3Email = ""
+        let MS4Name = ""
+        let MS4Email = ""
         
         
         let db = Firestore.firestore()
-        db.collection("shadowing").document().setData(["shadowdate": shadowdate, "shadowingtime": shadowingtime, "doctortoshadow": doctortoshadow, "endo": endo, "spine": spine, "peds": peds, "funca": funca, "resident": resident]) {(error) in
+        let newDocument = db.collection("shadowing").document()
+        newDocument.setData(["shadowdate": shadowdate, "shadowingtime": shadowingtime, "doctortoshadow": doctortoshadow, "numberofstudents": numberofstudents, "endo": endo, "spine": spine, "peds": peds, "funca": funca, "resident": resident, "MS1Name": MS1Name, "MS1Email": MS1Email, "MS2Name": MS2Name, "MS2Email": MS2Email, "MS3Name": MS3Name, "MS3Email": MS3Email, "MS4Name": MS4Name, "MS4Email": MS4Email, "id": newDocument.documentID]) {(error) in
         
+            
+            
         self.transitionToHome()
         
             if error != nil {

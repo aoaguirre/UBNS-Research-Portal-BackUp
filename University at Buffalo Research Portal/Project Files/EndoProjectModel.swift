@@ -47,7 +47,7 @@ struct EndoProject{
          "MS3Name": MS3Name,
          "MS3Email": MS3Email,
          "MS4Name": MS4Name,
-         "MS4Email": MS4Email,
+         "MS4Email": MS4Email
         ]
         
     }

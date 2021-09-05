@@ -1,26 +1,34 @@
 //
-//  SignUpViewController.swift
-//  University at Buffalo Research Portal
+//  NewRegisterViewController.swift
+//  UBNS Research Portal
 //
-//  Created by Alex Aguirre on 4/22/21.
+//  Created by Alex Aguirre on 7/9/21.
 //
-
 
 import UIKit
 import FirebaseAuth
 import Firebase
 import JGProgressHUD
 
-class RegisterViewController: UIViewController {
+class NewRegisterViewController:
+    
+
+    UIViewController {
     
     private let spinner = JGProgressHUD(style: .dark)
     
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
             scrollView.clipsToBounds = true
+        scrollView.backgroundColor = .systemBackground
         return scrollView
         
     }()
+    
+    @IBOutlet weak var submitLabel: UILabel!
+    
+    
+    @IBOutlet weak var submitbutton: UIButton!
     
     private let imageView: UIImageView = {
        let imageView = UIImageView()
@@ -46,7 +54,7 @@ class RegisterViewController: UIViewController {
         field.placeholder = "Email Address"
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .white
+        field.backgroundColor = .secondarySystemBackground
         return field
     }()
     
@@ -61,7 +69,7 @@ class RegisterViewController: UIViewController {
         field.placeholder = "Password..."
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .white
+        field.backgroundColor = .secondarySystemBackground
         field.isSecureTextEntry = true
         return field
     }()
@@ -77,7 +85,7 @@ class RegisterViewController: UIViewController {
         field.placeholder = "First Name..."
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .white
+        field.backgroundColor = .secondarySystemBackground
         return field
     }()
     
@@ -92,28 +100,25 @@ class RegisterViewController: UIViewController {
         field.placeholder = "Last Name..."
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .white
+        field.backgroundColor = .secondarySystemBackground
         return field
     }()
     
-    private let registerButton: UIButton = {
-       let button = UIButton()
-        button.setTitle("Log In", for: .normal)
-        button.backgroundColor = .link
-        button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 12
-        button.layer.masksToBounds = true
-        button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
-        return button
-    }()
+//    private let registerButton: UIButton = {
+//       let button = UIButton()
+//        button.setTitle("Log In", for: .normal)
+//        button.backgroundColor = .link
+//        button.setTitleColor(.white, for: .normal)
+//        button.layer.cornerRadius = 12
+//        button.layer.masksToBounds = true
+//        button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
+//        return button
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Log In"
         view.backgroundColor = .white
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register", style: .done, target: self, action: #selector(didTapRegister))
-        
-        registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside )
         
         emailField.delegate = self
         passwordField.delegate = self
@@ -121,11 +126,12 @@ class RegisterViewController: UIViewController {
         
         view.addSubview(scrollView)
         scrollView.addSubview(imageView)
+        scrollView.addSubview(submitLabel)
         scrollView.addSubview(firstNameField)
         scrollView.addSubview(lastNameField)
         scrollView.addSubview(emailField)
         scrollView.addSubview(passwordField)
-        scrollView.addSubview(registerButton)
+//        scrollView.addSubview(registerButton)
 
         imageView.isUserInteractionEnabled = true
         scrollView.isUserInteractionEnabled = true
@@ -145,7 +151,7 @@ class RegisterViewController: UIViewController {
         
         let size = scrollView.width/3
         imageView.frame = CGRect(x: (view.frame.size.width-size)/2,
-                                     y: 20,
+                                     y: 100,
                                   width: size,
                                   height: size)
         imageView.layer.cornerRadius = imageView.width/2.0
@@ -167,14 +173,16 @@ class RegisterViewController: UIViewController {
                                   width: scrollView.width-60,
                                   height: 52)
 
-        registerButton.frame = CGRect(x: 30,
-                                     y: passwordField.bottom+10,
-                                  width: scrollView.width-60,
-                                  height: 52)
+//        registerButton.frame = CGRect(x: 30,
+//                                     y: passwordField.bottom+60,
+//                                  width: scrollView.width-60,
+//                                  height: 52)
     }
     
-    @objc private func registerButtonTapped() {
-        emailField.resignFirstResponder()
+    
+    @IBAction func buttonSubmitted(_ sender: Any) {
+    
+    emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
         firstNameField.resignFirstResponder()
         lastNameField.resignFirstResponder()
@@ -237,11 +245,21 @@ class RegisterViewController: UIViewController {
                     }
                 })
                 
-                strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+                self?.transitionToHome()
         })
 
         })
     }
+    
+    
+    func transitionToHome() {
+        let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC")
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+        
+    }
+    
+    
     
     func alertUserLoginError(message: String = "Please enter all information to create a new account.") {
         let alert = UIAlertController(title: "Error",
@@ -252,27 +270,24 @@ class RegisterViewController: UIViewController {
                                       handler: nil))
         present(alert, animated: true)
     }
-    @objc private func didTapRegister() {
-        let vc = RegisterViewController()
-        vc.title = "Create Account"
-        navigationController?.pushViewController(vc, animated: true)
-    }
 }
 
-extension RegisterViewController: UITextFieldDelegate {
+extension NewRegisterViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField == emailField {
             passwordField.becomeFirstResponder()
         }
         else if textField == passwordField {
-            registerButtonTapped()
+            buttonSubmitted((Any).self)
         }
         return true
     }
 }
 
-extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension NewRegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    
 
     func presentPhotoActionSheet() {
         let actionSheet = UIAlertController(title: "Profile Picture",

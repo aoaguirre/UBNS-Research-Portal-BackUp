@@ -1,132 +1,126 @@
 //
-//  NewSpineViewController.swift
+//  PediatricsViewController.swift
 //  UBNS Research Portal
 //
-//  Created by Alex Aguirre on 6/29/21.
+//  Created by Alex Aguirre on 9/4/21.
 //
 
 import UIKit
 import Firebase
 
-class NewSpineViewController: UIViewController {
+class PediatricsViewController: UIViewController {
+
     
-  
     @IBOutlet weak var projectnameTextField: UITextField!
     @IBOutlet weak var residentnameTextField: UITextField!
     @IBOutlet weak var lengthofprojectTextField: UITextField!
     
+  
     @IBOutlet weak var sliderLabel: UILabel!
-    @IBOutlet weak var numberofstudents: UISlider!
-    @IBOutlet weak var submitproject: UIButton!
+    @IBOutlet weak var numberofstudents: UIStackView!
+    @IBOutlet weak var submitbutton: UIButton!
     
-    
-    @IBOutlet weak var IRBhelp: UISwitch!
+    @IBOutlet weak var IRBHelp: UISwitch!
     @IBOutlet weak var IRBHelpL: UILabel!
-    var isIRBButtonOn: Bool = false
+    var isIRBButtonon: Bool = false
     
     @IBOutlet weak var LitReview: UISwitch!
     @IBOutlet weak var LitReviewL: UILabel!
-    var isLitReviewButtonOn: Bool = false
+    var isLitReviewButtonon: Bool = false
     
     @IBOutlet weak var Stats: UISwitch!
     @IBOutlet weak var StatsL: UILabel!
-    var isStatsButtonOn: Bool = false
-    
+    var isStatsButtonon: Bool = false
+   
     @IBOutlet weak var DCUBNS: UISwitch!
     @IBOutlet weak var DCUBNSL: UILabel!
-    var isDCUBNSButtonOn: Bool = false
+    var isDCUBNSButtonon: Bool = false
     
     @IBOutlet weak var DCK: UISwitch!
     @IBOutlet weak var DCKL: UILabel!
-    var isDCKButtonOn: Bool = false
+    var isDCKButtonon: Bool = false
     
     @IBOutlet weak var Manuscript: UISwitch!
     @IBOutlet weak var ManuscriptL: UILabel!
-    var isManuscriptButtonOn: Bool = false
+    var isManuscriptButtonon: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
-        
-        
     }
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
-    @IBAction func IRBhelpButtonSwitched(_ sender: Any) {
-        isIRBButtonOn.toggle()
-        
-        if isIRBButtonOn {
-            IRBHelpL.text = "No"
-        } else {
-            IRBHelpL.text = "Yes"
-        }
+    @IBAction func IRBSwitched(_ sender: Any) {
+        isIRBButtonon.toggle()
+            
+            if isIRBButtonon {
+                IRBHelpL.text = "No"
+            } else {
+                IRBHelpL.text = "Yes"
+            }
     }
-    
-    @IBAction func LitReviewButtonSwitched(_ sender: Any) {
-        isLitReviewButtonOn.toggle()
-        
-        if isLitReviewButtonOn {
-            LitReviewL.text = "No"
-        } else {
-            LitReviewL.text = "Yes"
-        }
+    @IBAction func LitSwitched(_ sender: Any) {
+        isLitReviewButtonon.toggle()
+            
+            if isLitReviewButtonon {
+                LitReviewL.text = "No"
+            } else {
+                LitReviewL.text = "Yes"
+            }
     }
-    
-    @IBAction func StatsButtonSwitched(_ sender: Any) {
-        isStatsButtonOn.toggle()
-        
-        if isStatsButtonOn {
-            StatsL.text = "No"
-        } else {
-            StatsL.text = "Yes"
-        }
+    @IBAction func StatsSwitched(_ sender: Any) {
+        isStatsButtonon.toggle()
+            
+            if isStatsButtonon {
+                StatsL.text = "No"
+            } else {
+                StatsL.text = "Yes"
+            }
     }
-    
-    @IBAction func DCUBNSButtonSwitched(_ sender: Any) {
-        isDCUBNSButtonOn.toggle()
-        
-        if isDCUBNSButtonOn {
-            DCUBNSL.text = "No"
-        } else {
-            DCUBNSL.text = "Yes"
-        }
+    @IBAction func DCUBNSSwitched(_ sender: Any) {
+        isDCUBNSButtonon.toggle()
+            
+            if isDCUBNSButtonon {
+                DCUBNSL.text = "No"
+            } else {
+                DCUBNSL.text = "Yes"
+            }
     }
-    
-    @IBAction func DCKButtonSwitched(_ sender: Any) {
-        isDCKButtonOn.toggle()
-        
-        if isDCKButtonOn {
-            DCKL.text = "No"
-        } else {
-            DCKL.text = "Yes"
-        }
+    @IBAction func DCKSwitched(_ sender: Any) {
+        isDCKButtonon.toggle()
+            
+            if isDCKButtonon {
+                DCKL.text = "No"
+            } else {
+                DCKL.text = "Yes"
+            }
     }
-    
-    @IBAction func ManuscriptButtonSwitched(_ sender: Any) {
-        isManuscriptButtonOn.toggle()
-        
-        if isManuscriptButtonOn {
-            ManuscriptL.text = "No"
-        } else {
-            ManuscriptL.text = "Yes"
-        }
+    @IBAction func ManuscriptSwitched(_ sender: Any) {
+        isManuscriptButtonon.toggle()
+            
+            if isManuscriptButtonon {
+                ManuscriptL.text = "No"
+            } else {
+                ManuscriptL.text = "Yes"
+            }
     }
     
     
-    @IBAction func numberofStudents(_ sender: UISlider) {
-        let currentValue = Int(sender.value)
+    
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+    let currentValue = Int(sender.value)
             sliderLabel.text = "\(currentValue)"
     }
     
     
-    @IBAction func submitButtonTapped(_ sender: Any) {
-        
+    
+    @IBAction func submitbuttonPushed(_ sender: Any) {
         let projectname = projectnameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let residentname = residentnameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let lengthofproject = lengthofprojectTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -149,7 +143,7 @@ class NewSpineViewController: UIViewController {
 
 
         let db = Firestore.firestore()
-        let newDocument = db.collection("spineprojects").document()
+        let newDocument = db.collection("pediatricsprojects").document()
             newDocument.setData(["projectname": projectname, "residentname": residentname, "lengthofproject": lengthofproject, "numberofstudents": numberofstudents,"irbhelp": irbhelp,"litreview": litreview,"statistics": statistics, "DCUBNS": DCUBNS, "DCK": DCK, "manuscript": manuscript,"MS1Name":MS1Name, "MS1Email": MS1Email, "MS2Name": MS2Name, "MS2Email": MS2Email, "MS3Name": MS3Name,"MS3Email": MS3Email, "MS4Name": MS4Name, "MS4Email": MS4Email, "id": newDocument.documentID]) { (error) in
             
                 
@@ -169,4 +163,5 @@ class NewSpineViewController: UIViewController {
         view.window?.makeKeyAndVisible()
         
     }
+    
 }

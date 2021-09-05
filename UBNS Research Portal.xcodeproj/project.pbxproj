@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		427EC496065A5E65A2512E91 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF64129D4F9AB3C7CF03863 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework */; };
-		7EBC7CB089BDB789141A5890 /* Pods_University_at_Buffalo_Research_PortalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE67A0862078CB772CB93752 /* Pods_University_at_Buffalo_Research_PortalTests.framework */; };
-		869C0A66B53B4757279ED5C8 /* Pods_University_at_Buffalo_Research_Portal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BCDADF132D26303DA71F10 /* Pods_University_at_Buffalo_Research_Portal.framework */; };
+		383EFDE7ACECB7C8B1E34B91 /* Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D54A0B95B21E1B1A30457B8 /* Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework */; };
+		4CF5AC1AAF32B3669557B524 /* Pods_UBNS_Research_PortalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A7728EC0EA84A789968A22 /* Pods_UBNS_Research_PortalTests.framework */; };
 		900E409F268C0D750039895C /* SpineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E409E268C0D750039895C /* SpineTableViewCell.swift */; };
 		90147F00263252FC008AEDF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90147EFF263252FC008AEDF4 /* GoogleService-Info.plist */; };
 		90147F01263252FC008AEDF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90147EFF263252FC008AEDF4 /* GoogleService-Info.plist */; };
@@ -58,6 +57,23 @@
 		90E42472267BB27A00B1621F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E42471267BB27A00B1621F /* ProfileViewModel.swift */; };
 		90E42477267BB28800B1621F /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E42476267BB28800B1621F /* SearchResults.swift */; };
 		90EB1CC326756B5500D7B94C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB1CC226756B5500D7B94C /* ChatViewController.swift */; };
+		90EBDE5F26E43CFD006527C1 /* NeuroOncTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE5E26E43CFD006527C1 /* NeuroOncTableViewCell.swift */; };
+		90EBDE6426E43D12006527C1 /* NeuroOncTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE6326E43D12006527C1 /* NeuroOncTableViewController.swift */; };
+		90EBDE6E26E43D4D006527C1 /* NeuroOncProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE6D26E43D4D006527C1 /* NeuroOncProjectModel.swift */; };
+		90EBDE7326E43D60006527C1 /* TraumaProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE7226E43D60006527C1 /* TraumaProjectModel.swift */; };
+		90EBDE7826E43D6B006527C1 /* TraumaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE7726E43D6B006527C1 /* TraumaTableViewController.swift */; };
+		90EBDE7D26E43D79006527C1 /* TraumaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE7C26E43D79006527C1 /* TraumaViewController.swift */; };
+		90EBDE8526E43D97006527C1 /* NeuroOncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE8426E43D97006527C1 /* NeuroOncViewController.swift */; };
+		90EBDE8A26E43DA7006527C1 /* TraumaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE8926E43DA7006527C1 /* TraumaTableViewCell.swift */; };
+		90EBDE8F26E43DB4006527C1 /* FunctionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE8E26E43DB4006527C1 /* FunctionalTableViewCell.swift */; };
+		90EBDE9426E43DC5006527C1 /* FunctionalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE9326E43DC5006527C1 /* FunctionalTableViewController.swift */; };
+		90EBDE9926E43DD2006527C1 /* FunctionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE9826E43DD2006527C1 /* FunctionalViewController.swift */; };
+		90EBDE9E26E43DE1006527C1 /* FunctionalProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDE9D26E43DE1006527C1 /* FunctionalProjectModel.swift */; };
+		90EBDEA326E43DF6006527C1 /* PediatricsProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDEA226E43DF6006527C1 /* PediatricsProjectModel.swift */; };
+		90EBDEA826E43E07006527C1 /* PediatricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDEA726E43E07006527C1 /* PediatricsViewController.swift */; };
+		90EBDEAD26E43E14006527C1 /* PediatricsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDEAC26E43E14006527C1 /* PediatricsTableViewController.swift */; };
+		90EBDEB226E43E20006527C1 /* PediatricsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EBDEB126E43E20006527C1 /* PediatricsTableViewCell.swift */; };
+		985F7F2AE09A85F5FCD94049 /* Pods_UBNS_Research_Portal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7B3F0253E61DF9FEB66359 /* Pods_UBNS_Research_Portal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,12 +91,207 @@
 			remoteGlobalIDString = 907D75C9262FBDAB007CECB8;
 			remoteInfo = "University at Buffalo Research Portal";
 		};
+		90E9F03626D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF96B57ADE05E8909F823BDF6868B3E3;
+			remoteInfo = abseil;
+		};
+		90E9F03826D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 514D7742C6CBB0BDBD9984AEE97DDFDE;
+			remoteInfo = "BoringSSL-GRPC";
+		};
+		90E9F03A26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43B1E4CD7B30B9FD278100133C2AC788;
+			remoteInfo = FirebaseAuth;
+		};
+		90E9F03C26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2B63D462DB7F827C4B11FD51E4F8E2D;
+			remoteInfo = FirebaseCore;
+		};
+		90E9F03E26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8CC9178C366942FD6FF6A115604EAD58;
+			remoteInfo = FirebaseCoreDiagnostics;
+		};
+		90E9F04026D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51671C73F008B5C0C3751B3855999213;
+			remoteInfo = FirebaseDatabase;
+		};
+		90E9F04226D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92000153CD73F7FC2DBAB4AB708269F3;
+			remoteInfo = FirebaseFirestore;
+		};
+		90E9F04426D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13C8C8B254851998F9289F71229B28A2;
+			remoteInfo = FirebaseInstallations;
+		};
+		90E9F04626D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CF8FA5F01F446F01AAC7331075452AD;
+			remoteInfo = FirebaseStorage;
+		};
+		90E9F04826D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 856B5CD56F194FAD26EA91620B66D614;
+			remoteInfo = GoogleDataTransport;
+		};
+		90E9F04A26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B43874C6CBB50E7134FBEC24BABFE14F;
+			remoteInfo = GoogleUtilities;
+		};
+		90E9F04C26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1911113E0FBF13CFF9132E5FF7685228;
+			remoteInfo = "gRPC-C++";
+		};
+		90E9F04E26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7C87B5D0A6752AFA2642F1BCA967A3;
+			remoteInfo = "gRPC-C++-gRPCCertificates-Cpp";
+		};
+		90E9F05026D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B471867C535B02FA55D87E260F6480F8;
+			remoteInfo = "gRPC-Core";
+		};
+		90E9F05226D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C1998E0D8085221AD87F89B614C10E52;
+			remoteInfo = GTMSessionFetcher;
+		};
+		90E9F05426D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B81513B0B3333500DFFB1B1B179FB571;
+			remoteInfo = InputBarAccessoryView;
+		};
+		90E9F05626D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FBAFAA66E9C7401884F439AE8BC662C;
+			remoteInfo = JGProgressHUD;
+		};
+		90E9F05826D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A9F46A999C47653013D3AD854352507;
+			remoteInfo = "leveldb-library";
+		};
+		90E9F05A26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15A68A8F33BD9EB9AFD02465B0418BCF;
+			remoteInfo = MessageKit;
+		};
+		90E9F05C26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06FC5C9CF96D60C50FCD47D339C91951;
+			remoteInfo = nanopb;
+		};
+		90E9F06426D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3347A1AB6546F0A3977529B8F199DC41;
+			remoteInfo = PromisesObjC;
+		};
+		90E9F06626D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 921BE4A82C4A7A5C72A0C6F8B8FEF200;
+			remoteInfo = Realm;
+		};
+		90E9F06826D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 437919EE08EC6BFCCBAC3BD346309742;
+			remoteInfo = RealmSwift;
+		};
+		90E9F06A26D7F13800CFAB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0B214D775196BA7CA8E17E53048A493;
+			remoteInfo = SDWebImage;
+		};
+		90EBDE3826E43ADE006527C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E9EED614566A2C4559D5B6C5618F48D;
+			remoteInfo = "Pods-UBNS Research Portal";
+		};
+		90EBDE3A26E43ADE006527C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD4E5BF1754627D46A5758F2F194ABFB;
+			remoteInfo = "Pods-UBNS Research Portal-UBNS Research PortalUITests";
+		};
+		90EBDE3C26E43ADE006527C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D533F85DF17569716976A1E778517C5;
+			remoteInfo = "Pods-UBNS Research PortalTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16A7728EC0EA84A789968A22 /* Pods_UBNS_Research_PortalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UBNS_Research_PortalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C17C14A8435374607F45C1B /* Pods-University at Buffalo Research Portal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research Portal.release.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal.release.xcconfig"; sourceTree = "<group>"; };
+		3ADC29C52DFE6F31FB53E242 /* Pods-UBNS Research PortalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBNS Research PortalTests.release.xcconfig"; path = "Target Support Files/Pods-UBNS Research PortalTests/Pods-UBNS Research PortalTests.release.xcconfig"; sourceTree = "<group>"; };
 		3F5AA57D69B775A3BEEE47EF /* Pods-University at Buffalo Research PortalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research PortalTests.release.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research PortalTests/Pods-University at Buffalo Research PortalTests.release.xcconfig"; sourceTree = "<group>"; };
+		470773E3659AA30359E4DAE6 /* Pods-UBNS Research Portal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBNS Research Portal.debug.xcconfig"; path = "Target Support Files/Pods-UBNS Research Portal/Pods-UBNS Research Portal.debug.xcconfig"; sourceTree = "<group>"; };
+		49D9EBAEE37D61229DF01FF0 /* Pods-UBNS Research PortalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBNS Research PortalTests.debug.xcconfig"; path = "Target Support Files/Pods-UBNS Research PortalTests/Pods-UBNS Research PortalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5624A1715E4C1B9810600E88 /* Pods-University at Buffalo Research Portal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research Portal.debug.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal.debug.xcconfig"; sourceTree = "<group>"; };
+		66FD779EF12F53CCCEF78209 /* Pods-UBNS Research Portal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBNS Research Portal.release.xcconfig"; path = "Target Support Files/Pods-UBNS Research Portal/Pods-UBNS Research Portal.release.xcconfig"; sourceTree = "<group>"; };
+		6A2BA72C1384F1817E875EC7 /* Pods-UBNS Research Portal-UBNS Research PortalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBNS Research Portal-UBNS Research PortalUITests.release.xcconfig"; path = "Target Support Files/Pods-UBNS Research Portal-UBNS Research PortalUITests/Pods-UBNS Research Portal-UBNS Research PortalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		792532EBA8903B71D368B7D4 /* Pods-University at Buffalo Research PortalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research PortalTests.debug.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research PortalTests/Pods-University at Buffalo Research PortalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8343FE955ADAE4F4125FD8CA /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		900E409E268C0D750039895C /* SpineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineTableViewCell.swift; sourceTree = "<group>"; };
@@ -134,11 +345,28 @@
 		90E4246C267BB26400B1621F /* ConversationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsModels.swift; sourceTree = "<group>"; };
 		90E42471267BB27A00B1621F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		90E42476267BB28800B1621F /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		90EB1CC226756B5500D7B94C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		98BCDADF132D26303DA71F10 /* Pods_University_at_Buffalo_Research_Portal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_at_Buffalo_Research_Portal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAF64129D4F9AB3C7CF03863 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EBDE5E26E43CFD006527C1 /* NeuroOncTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroOncTableViewCell.swift; sourceTree = "<group>"; };
+		90EBDE6326E43D12006527C1 /* NeuroOncTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroOncTableViewController.swift; sourceTree = "<group>"; };
+		90EBDE6D26E43D4D006527C1 /* NeuroOncProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroOncProjectModel.swift; sourceTree = "<group>"; };
+		90EBDE7226E43D60006527C1 /* TraumaProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraumaProjectModel.swift; sourceTree = "<group>"; };
+		90EBDE7726E43D6B006527C1 /* TraumaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraumaTableViewController.swift; sourceTree = "<group>"; };
+		90EBDE7C26E43D79006527C1 /* TraumaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraumaViewController.swift; sourceTree = "<group>"; };
+		90EBDE8426E43D97006527C1 /* NeuroOncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroOncViewController.swift; sourceTree = "<group>"; };
+		90EBDE8926E43DA7006527C1 /* TraumaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraumaTableViewCell.swift; sourceTree = "<group>"; };
+		90EBDE8E26E43DB4006527C1 /* FunctionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalTableViewCell.swift; sourceTree = "<group>"; };
+		90EBDE9326E43DC5006527C1 /* FunctionalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalTableViewController.swift; sourceTree = "<group>"; };
+		90EBDE9826E43DD2006527C1 /* FunctionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalViewController.swift; sourceTree = "<group>"; };
+		90EBDE9D26E43DE1006527C1 /* FunctionalProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalProjectModel.swift; sourceTree = "<group>"; };
+		90EBDEA226E43DF6006527C1 /* PediatricsProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediatricsProjectModel.swift; sourceTree = "<group>"; };
+		90EBDEA726E43E07006527C1 /* PediatricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediatricsViewController.swift; sourceTree = "<group>"; };
+		90EBDEAC26E43E14006527C1 /* PediatricsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediatricsTableViewController.swift; sourceTree = "<group>"; };
+		90EBDEB126E43E20006527C1 /* PediatricsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediatricsTableViewCell.swift; sourceTree = "<group>"; };
+		9A7B3F0253E61DF9FEB66359 /* Pods_UBNS_Research_Portal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UBNS_Research_Portal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D54A0B95B21E1B1A30457B8 /* Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB59EF83842A0531CFA223D /* Pods-UBNS Research Portal-UBNS Research PortalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBNS Research Portal-UBNS Research PortalUITests.debug.xcconfig"; path = "Target Support Files/Pods-UBNS Research Portal-UBNS Research PortalUITests/Pods-UBNS Research Portal-UBNS Research PortalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC64A3136A68A808C40E0180 /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig"; path = "Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FE67A0862078CB772CB93752 /* Pods_University_at_Buffalo_Research_PortalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_at_Buffalo_Research_PortalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +374,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				869C0A66B53B4757279ED5C8 /* Pods_University_at_Buffalo_Research_Portal.framework in Frameworks */,
+				985F7F2AE09A85F5FCD94049 /* Pods_UBNS_Research_Portal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +382,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EBC7CB089BDB789141A5890 /* Pods_University_at_Buffalo_Research_PortalTests.framework in Frameworks */,
+				4CF5AC1AAF32B3669557B524 /* Pods_UBNS_Research_PortalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +390,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427EC496065A5E65A2512E91 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework in Frameworks */,
+				383EFDE7ACECB7C8B1E34B91 /* Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +406,12 @@
 				EC64A3136A68A808C40E0180 /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig */,
 				792532EBA8903B71D368B7D4 /* Pods-University at Buffalo Research PortalTests.debug.xcconfig */,
 				3F5AA57D69B775A3BEEE47EF /* Pods-University at Buffalo Research PortalTests.release.xcconfig */,
+				470773E3659AA30359E4DAE6 /* Pods-UBNS Research Portal.debug.xcconfig */,
+				66FD779EF12F53CCCEF78209 /* Pods-UBNS Research Portal.release.xcconfig */,
+				BCB59EF83842A0531CFA223D /* Pods-UBNS Research Portal-UBNS Research PortalUITests.debug.xcconfig */,
+				6A2BA72C1384F1817E875EC7 /* Pods-UBNS Research Portal-UBNS Research PortalUITests.release.xcconfig */,
+				49D9EBAEE37D61229DF01FF0 /* Pods-UBNS Research PortalTests.debug.xcconfig */,
+				3ADC29C52DFE6F31FB53E242 /* Pods-UBNS Research PortalTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -216,6 +450,10 @@
 		906023802684D0C400EA5D1E /* Project Files */ = {
 			isa = PBXGroup;
 			children = (
+				90EBDE5A26E43B95006527C1 /* Neurosurgical-Oncology */,
+				90EBDE5626E43B7E006527C1 /* Trauma Neurosurgery */,
+				90EBDE5226E43B75006527C1 /* Functional */,
+				90EBDE4E26E43AFF006527C1 /* Pediatrics */,
 				906023902684DF8600EA5D1E /* PositionSelectionViewController.swift */,
 				9068AA2E269896E100A2CC8D /* Login */,
 				904571FA268BD1EE00FE010E /* NewSpineViewController.swift */,
@@ -247,9 +485,10 @@
 		907D75C1262FBDAB007CECB8 = {
 			isa = PBXGroup;
 			children = (
-				907D75CC262FBDAB007CECB8 /* University at Buffalo Research Portal */,
-				907D75E3262FBDAD007CECB8 /* University at Buffalo Research PortalTests */,
 				907D75EE262FBDAD007CECB8 /* University at Buffalo Research PortalUITests */,
+				907D75E3262FBDAD007CECB8 /* University at Buffalo Research PortalTests */,
+				90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */,
+				907D75CC262FBDAB007CECB8 /* University at Buffalo Research Portal */,
 				907D75CB262FBDAB007CECB8 /* Products */,
 				49ECB2EA9A83C67A411086A9 /* Pods */,
 				EDE52789F0F7DC8676903C3B /* Frameworks */,
@@ -269,9 +508,9 @@
 		907D75CC262FBDAB007CECB8 /* University at Buffalo Research Portal */ = {
 			isa = PBXGroup;
 			children = (
+				90E4249D267BB6BE00B1621F /* Views */,
 				906023802684D0C400EA5D1E /* Project Files */,
 				90E4247C267BB2A400B1621F /* Resources */,
-				90E4249D267BB6BE00B1621F /* Views */,
 				905437EC2630E3D2009A2AB3 /* Controllers */,
 				905437E22630E37B009A2AB3 /* App Images */,
 				90147EFF263252FC008AEDF4 /* GoogleService-Info.plist */,
@@ -338,12 +577,90 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		90E9F01626D7F13700CFAB35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90E9F03726D7F13800CFAB35 /* absl.framework */,
+				90E9F03926D7F13800CFAB35 /* openssl_grpc.framework */,
+				90E9F03B26D7F13800CFAB35 /* FirebaseAuth.framework */,
+				90E9F03D26D7F13800CFAB35 /* FirebaseCore.framework */,
+				90E9F03F26D7F13800CFAB35 /* FirebaseCoreDiagnostics.framework */,
+				90E9F04126D7F13800CFAB35 /* FirebaseDatabase.framework */,
+				90E9F04326D7F13800CFAB35 /* FirebaseFirestore.framework */,
+				90E9F04526D7F13800CFAB35 /* FirebaseInstallations.framework */,
+				90E9F04726D7F13800CFAB35 /* FirebaseStorage.framework */,
+				90E9F04926D7F13800CFAB35 /* GoogleDataTransport.framework */,
+				90E9F04B26D7F13800CFAB35 /* GoogleUtilities.framework */,
+				90E9F04D26D7F13800CFAB35 /* grpcpp.framework */,
+				90E9F04F26D7F13800CFAB35 /* gRPCCertificates-Cpp.bundle */,
+				90E9F05126D7F13800CFAB35 /* grpc.framework */,
+				90E9F05326D7F13800CFAB35 /* GTMSessionFetcher.framework */,
+				90E9F05526D7F13800CFAB35 /* InputBarAccessoryView.framework */,
+				90E9F05726D7F13800CFAB35 /* JGProgressHUD.framework */,
+				90E9F05926D7F13800CFAB35 /* leveldb.framework */,
+				90E9F05B26D7F13800CFAB35 /* MessageKit.framework */,
+				90E9F05D26D7F13800CFAB35 /* nanopb.framework */,
+				90EBDE3926E43ADE006527C1 /* Pods_UBNS_Research_Portal.framework */,
+				90EBDE3B26E43ADE006527C1 /* Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework */,
+				90EBDE3D26E43ADE006527C1 /* Pods_UBNS_Research_PortalTests.framework */,
+				90E9F06526D7F13800CFAB35 /* FBLPromises.framework */,
+				90E9F06726D7F13800CFAB35 /* Realm.framework */,
+				90E9F06926D7F13800CFAB35 /* RealmSwift.framework */,
+				90E9F06B26D7F13800CFAB35 /* SDWebImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90EBDE4E26E43AFF006527C1 /* Pediatrics */ = {
+			isa = PBXGroup;
+			children = (
+				90EBDEA226E43DF6006527C1 /* PediatricsProjectModel.swift */,
+				90EBDEA726E43E07006527C1 /* PediatricsViewController.swift */,
+				90EBDEAC26E43E14006527C1 /* PediatricsTableViewController.swift */,
+				90EBDEB126E43E20006527C1 /* PediatricsTableViewCell.swift */,
+			);
+			path = Pediatrics;
+			sourceTree = "<group>";
+		};
+		90EBDE5226E43B75006527C1 /* Functional */ = {
+			isa = PBXGroup;
+			children = (
+				90EBDE8E26E43DB4006527C1 /* FunctionalTableViewCell.swift */,
+				90EBDE9326E43DC5006527C1 /* FunctionalTableViewController.swift */,
+				90EBDE9826E43DD2006527C1 /* FunctionalViewController.swift */,
+				90EBDE9D26E43DE1006527C1 /* FunctionalProjectModel.swift */,
+			);
+			path = Functional;
+			sourceTree = "<group>";
+		};
+		90EBDE5626E43B7E006527C1 /* Trauma Neurosurgery */ = {
+			isa = PBXGroup;
+			children = (
+				90EBDE7226E43D60006527C1 /* TraumaProjectModel.swift */,
+				90EBDE7726E43D6B006527C1 /* TraumaTableViewController.swift */,
+				90EBDE7C26E43D79006527C1 /* TraumaViewController.swift */,
+				90EBDE8926E43DA7006527C1 /* TraumaTableViewCell.swift */,
+			);
+			path = "Trauma Neurosurgery";
+			sourceTree = "<group>";
+		};
+		90EBDE5A26E43B95006527C1 /* Neurosurgical-Oncology */ = {
+			isa = PBXGroup;
+			children = (
+				90EBDE5E26E43CFD006527C1 /* NeuroOncTableViewCell.swift */,
+				90EBDE6326E43D12006527C1 /* NeuroOncTableViewController.swift */,
+				90EBDE6D26E43D4D006527C1 /* NeuroOncProjectModel.swift */,
+				90EBDE8426E43D97006527C1 /* NeuroOncViewController.swift */,
+			);
+			path = "Neurosurgical-Oncology";
+			sourceTree = "<group>";
+		};
 		EDE52789F0F7DC8676903C3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98BCDADF132D26303DA71F10 /* Pods_University_at_Buffalo_Research_Portal.framework */,
-				AAF64129D4F9AB3C7CF03863 /* Pods_University_at_Buffalo_Research_Portal_University_at_Buffalo_Research_PortalUITests.framework */,
-				FE67A0862078CB772CB93752 /* Pods_University_at_Buffalo_Research_PortalTests.framework */,
+				9A7B3F0253E61DF9FEB66359 /* Pods_UBNS_Research_Portal.framework */,
+				9D54A0B95B21E1B1A30457B8 /* Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework */,
+				16A7728EC0EA84A789968A22 /* Pods_UBNS_Research_PortalTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -442,6 +759,12 @@
 			mainGroup = 907D75C1262FBDAB007CECB8;
 			productRefGroup = 907D75CB262FBDAB007CECB8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 90E9F01626D7F13700CFAB35 /* Products */;
+					ProjectRef = 90E9F01526D7F13700CFAB35 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				907D75C9262FBDAB007CECB8 /* UBNS Research Portal */,
@@ -450,6 +773,198 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		90E9F03726D7F13800CFAB35 /* absl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = absl.framework;
+			remoteRef = 90E9F03626D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F03926D7F13800CFAB35 /* openssl_grpc.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = openssl_grpc.framework;
+			remoteRef = 90E9F03826D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F03B26D7F13800CFAB35 /* FirebaseAuth.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseAuth.framework;
+			remoteRef = 90E9F03A26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F03D26D7F13800CFAB35 /* FirebaseCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCore.framework;
+			remoteRef = 90E9F03C26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F03F26D7F13800CFAB35 /* FirebaseCoreDiagnostics.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCoreDiagnostics.framework;
+			remoteRef = 90E9F03E26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F04126D7F13800CFAB35 /* FirebaseDatabase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseDatabase.framework;
+			remoteRef = 90E9F04026D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F04326D7F13800CFAB35 /* FirebaseFirestore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseFirestore.framework;
+			remoteRef = 90E9F04226D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F04526D7F13800CFAB35 /* FirebaseInstallations.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseInstallations.framework;
+			remoteRef = 90E9F04426D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F04726D7F13800CFAB35 /* FirebaseStorage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseStorage.framework;
+			remoteRef = 90E9F04626D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F04926D7F13800CFAB35 /* GoogleDataTransport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleDataTransport.framework;
+			remoteRef = 90E9F04826D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F04B26D7F13800CFAB35 /* GoogleUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleUtilities.framework;
+			remoteRef = 90E9F04A26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F04D26D7F13800CFAB35 /* grpcpp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = grpcpp.framework;
+			remoteRef = 90E9F04C26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F04F26D7F13800CFAB35 /* gRPCCertificates-Cpp.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "gRPCCertificates-Cpp.bundle";
+			remoteRef = 90E9F04E26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F05126D7F13800CFAB35 /* grpc.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = grpc.framework;
+			remoteRef = 90E9F05026D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F05326D7F13800CFAB35 /* GTMSessionFetcher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTMSessionFetcher.framework;
+			remoteRef = 90E9F05226D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F05526D7F13800CFAB35 /* InputBarAccessoryView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = InputBarAccessoryView.framework;
+			remoteRef = 90E9F05426D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F05726D7F13800CFAB35 /* JGProgressHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JGProgressHUD.framework;
+			remoteRef = 90E9F05626D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F05926D7F13800CFAB35 /* leveldb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = leveldb.framework;
+			remoteRef = 90E9F05826D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F05B26D7F13800CFAB35 /* MessageKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MessageKit.framework;
+			remoteRef = 90E9F05A26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F05D26D7F13800CFAB35 /* nanopb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nanopb.framework;
+			remoteRef = 90E9F05C26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F06526D7F13800CFAB35 /* FBLPromises.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FBLPromises.framework;
+			remoteRef = 90E9F06426D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F06726D7F13800CFAB35 /* Realm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Realm.framework;
+			remoteRef = 90E9F06626D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F06926D7F13800CFAB35 /* RealmSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RealmSwift.framework;
+			remoteRef = 90E9F06826D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E9F06B26D7F13800CFAB35 /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = 90E9F06A26D7F13800CFAB35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EBDE3926E43ADE006527C1 /* Pods_UBNS_Research_Portal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_UBNS_Research_Portal.framework;
+			remoteRef = 90EBDE3826E43ADE006527C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EBDE3B26E43ADE006527C1 /* Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_UBNS_Research_Portal_UBNS_Research_PortalUITests.framework;
+			remoteRef = 90EBDE3A26E43ADE006527C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EBDE3D26E43ADE006527C1 /* Pods_UBNS_Research_PortalTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_UBNS_Research_PortalTests.framework;
+			remoteRef = 90EBDE3C26E43ADE006527C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		907D75C8262FBDAB007CECB8 /* Resources */ = {
@@ -502,7 +1017,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UBNS Research Portal-UBNS Research PortalUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -515,15 +1030,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UBNS Research Portal-UBNS Research PortalUITests/Pods-UBNS Research Portal-UBNS Research PortalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UBNS Research Portal-UBNS Research PortalUITests/Pods-UBNS Research Portal-UBNS Research PortalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests/Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UBNS Research Portal-UBNS Research PortalUITests/Pods-UBNS Research Portal-UBNS Research PortalUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B207B73957329A635D865C4F /* [CP] Check Pods Manifest.lock */ = {
@@ -541,7 +1056,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-University at Buffalo Research Portal-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UBNS Research Portal-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -554,15 +1069,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UBNS Research Portal/Pods-UBNS Research Portal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UBNS Research Portal/Pods-UBNS Research Portal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-University at Buffalo Research Portal/Pods-University at Buffalo Research Portal-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UBNS Research Portal/Pods-UBNS Research Portal-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FCA60C7AF63355EA01AFBB2D /* [CP] Check Pods Manifest.lock */ = {
@@ -580,7 +1095,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-University at Buffalo Research PortalTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UBNS Research PortalTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -595,7 +1110,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				90DD0C26267E3FC000309C75 /* StorageManager.swift in Sources */,
+				90EBDE9426E43DC5006527C1 /* FunctionalTableViewController.swift in Sources */,
 				9068AA422698DAEF00A2CC8D /* ShadowingTableViewController.swift in Sources */,
+				90EBDEAD26E43E14006527C1 /* PediatricsTableViewController.swift in Sources */,
 				90457B4826322B9D008F36B2 /* LoginViewController.swift in Sources */,
 				90E42472267BB27A00B1621F /* ProfileViewModel.swift in Sources */,
 				904571E9268B9C6500FE010E /* EndoTableViewController.swift in Sources */,
@@ -609,24 +1126,38 @@
 				90EB1CC326756B5500D7B94C /* ChatViewController.swift in Sources */,
 				90E4246D267BB26400B1621F /* ConversationsModels.swift in Sources */,
 				9068AA332698A52200A2CC8D /* OriginalViewController.swift in Sources */,
+				90EBDEA826E43E07006527C1 /* PediatricsViewController.swift in Sources */,
+				90EBDE6426E43D12006527C1 /* NeuroOncTableViewController.swift in Sources */,
+				90EBDEB226E43E20006527C1 /* PediatricsTableViewCell.swift in Sources */,
 				904571EE268B9F9300FE010E /* NewEndoViewController.swift in Sources */,
+				90EBDE8526E43D97006527C1 /* NeuroOncViewController.swift in Sources */,
 				904340DA2672A226006460C7 /* PhotoViewController.swift in Sources */,
 				902F024B2683DD19005CD7FB /* ConversationTableViewCell.swift in Sources */,
 				900E409F268C0D750039895C /* SpineTableViewCell.swift in Sources */,
 				904340D02672A197006460C7 /* ConversationsViewController.swift in Sources */,
+				90EBDEA326E43DF6006527C1 /* PediatricsProjectModel.swift in Sources */,
 				9068AA382698D17E00A2CC8D /* ShadowingViewController.swift in Sources */,
 				90B16609268BEC2700FAD25F /* EndoTableViewCell.swift in Sources */,
+				90EBDE9926E43DD2006527C1 /* FunctionalViewController.swift in Sources */,
+				90EBDE5F26E43CFD006527C1 /* NeuroOncTableViewCell.swift in Sources */,
+				90EBDE8A26E43DA7006527C1 /* TraumaTableViewCell.swift in Sources */,
 				90B165FC268BE7BA00FAD25F /* SpineProjectModel.swift in Sources */,
 				90457B4326322B3A008F36B2 /* RegisterViewController.swift in Sources */,
 				902BE761267D6EA500168AAA /* ProfileTableViewCell.swift in Sources */,
 				907D75CE262FBDAB007CECB8 /* AppDelegate.swift in Sources */,
 				90E42465267BB23D00B1621F /* ChatModels.swift in Sources */,
 				902BE739267D0CD200168AAA /* ScenceDelegate.swift in Sources */,
+				90EBDE7826E43D6B006527C1 /* TraumaTableViewController.swift in Sources */,
+				90EBDE6E26E43D4D006527C1 /* NeuroOncProjectModel.swift in Sources */,
 				904340EC2672A288006460C7 /* ProfileViewController.swift in Sources */,
+				90EBDE7D26E43D79006527C1 /* TraumaViewController.swift in Sources */,
 				9068AA252698965300A2CC8D /* NewLoginViewController.swift in Sources */,
 				904340E72672A26F006460C7 /* NewConversationViewController.swift in Sources */,
+				90EBDE9E26E43DE1006527C1 /* FunctionalProjectModel.swift in Sources */,
+				90EBDE8F26E43DB4006527C1 /* FunctionalTableViewCell.swift in Sources */,
 				904571FB268BD1EF00FE010E /* NewSpineViewController.swift in Sources */,
 				906023912684DF8600EA5D1E /* PositionSelectionViewController.swift in Sources */,
+				90EBDE7326E43D60006527C1 /* TraumaProjectModel.swift in Sources */,
 				902BE73E267D0E4000168AAA /* Extensions.swift in Sources */,
 				90B16601268BEB5D00FAD25F /* EndoProjectModel.swift in Sources */,
 			);
@@ -782,16 +1313,19 @@
 		};
 		907D75F5262FBDAD007CECB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5624A1715E4C1B9810600E88 /* Pods-University at Buffalo Research Portal.debug.xcconfig */;
+			baseConfigurationReference = 470773E3659AA30359E4DAE6 /* Pods-UBNS Research Portal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDHN9X2WG3;
 				INFOPLIST_FILE = "University at Buffalo Research Portal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "AA.University-at-Buffalo-Research-Portal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -801,16 +1335,19 @@
 		};
 		907D75F6262FBDAD007CECB8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C17C14A8435374607F45C1B /* Pods-University at Buffalo Research Portal.release.xcconfig */;
+			baseConfigurationReference = 66FD779EF12F53CCCEF78209 /* Pods-UBNS Research Portal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDHN9X2WG3;
 				INFOPLIST_FILE = "University at Buffalo Research Portal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "AA.University-at-Buffalo-Research-Portal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -820,7 +1357,7 @@
 		};
 		907D75F8262FBDAD007CECB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 792532EBA8903B71D368B7D4 /* Pods-University at Buffalo Research PortalTests.debug.xcconfig */;
+			baseConfigurationReference = 49D9EBAEE37D61229DF01FF0 /* Pods-UBNS Research PortalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -842,7 +1379,7 @@
 		};
 		907D75F9262FBDAD007CECB8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F5AA57D69B775A3BEEE47EF /* Pods-University at Buffalo Research PortalTests.release.xcconfig */;
+			baseConfigurationReference = 3ADC29C52DFE6F31FB53E242 /* Pods-UBNS Research PortalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -864,7 +1401,7 @@
 		};
 		907D75FB262FBDAD007CECB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8343FE955ADAE4F4125FD8CA /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.debug.xcconfig */;
+			baseConfigurationReference = BCB59EF83842A0531CFA223D /* Pods-UBNS Research Portal-UBNS Research PortalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -884,7 +1421,7 @@
 		};
 		907D75FC262FBDAD007CECB8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC64A3136A68A808C40E0180 /* Pods-University at Buffalo Research Portal-University at Buffalo Research PortalUITests.release.xcconfig */;
+			baseConfigurationReference = 6A2BA72C1384F1817E875EC7 /* Pods-UBNS Research Portal-UBNS Research PortalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
